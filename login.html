@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>LOGIN </title>
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body onload="obtener()">
+        <h1>PC 5</h1>
+
+        <h2>Correo:</h2>  
+        <input type="email" id="mail" placeholder="ejemplo@ejemplo.com">
+
+        <h2>Contraseña:</h2>    
+        <input type="password" id="contra" placeholder="Contraseña">
+       <h2></h2>
+        <input onclick="obtener()" type="button" value="Login">
+        
+     
+    </body>
+
+    <script type="text/javascript">
+    function obtener()
+    {
+        if(document.body.mail.value=='ayudadios@gmail.com'&& document.body.contra.value=='diosesgrande'){
+            document.body.submit();
+        }else{
+            alert("Ingrese correo y contraseña correctos ;)")
+        }
+        
+    }
+    
+    </script>
+</html>
